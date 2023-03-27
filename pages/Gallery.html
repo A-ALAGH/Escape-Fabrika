@@ -1,0 +1,190 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/stylesheet.css">
+        <!-- <link rel="stylesheet" href="../styles/stylesheet.css"> -->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-custom navbar-dark fixed-top ">
+            <ul><a href="../index.html"><img src="../images/escape.PNG" alt="logo" class="navLogo"> </a></ul>
+            <!-- Bouton hamburger -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Div qui contient les éléments de la barre de navigation -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav navv">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Destinations.html">A Propos</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Destinations.html">Contact</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Destinations.html">Offres Spéciales</a>
+                </li>
+                <!--search-->
+                <li ><form class="d-flex ">
+                  <input class="form-control me-2" type="text" placeholder="Rechercher sur le site">
+                  <button class="btn btn-primary" type="button">Search</button>
+                  </li>
+                </form>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="app container-fluid">
+
+            <div class="cardList container-fluid">
+                <button class="cardList__btn btn btn--left">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
+        
+                <div class="cards__wrapper">
+                    <div class="card current--card">
+                        <div class="card__image">
+                            <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                        </div>
+                    </div>
+        
+                    <div class="card next--card">
+                        <div class="card__image">
+                            <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                        </div>
+                    </div>
+        
+                    <div class="card previous--card">
+                        <div class="card__image">
+                            <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="cardList__btn btn btn--right">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        
+            <div class="infoList">
+                <div class="info__wrapper">
+                    <div class="info current--info">
+                        <h1 class="text name">Highlands</h1>
+                        <h4 class="text location">Scotland</h4>
+                        <p class="text description">The mountains are calling</p>
+                    </div>
+        
+                    <div class="info next--info">
+                        <h1 class="text name">Machu Pichu</h1>
+                        <h4 class="text location">Peru</h4>
+                        <p class="text description">Adventure is never far away</p>
+                    </div>
+        
+                    <div class="info previous--info">
+                        <h1 class="text name">Chamonix</h1>
+                        <h4 class="text location">France</h4>
+                        <p class="text description">Let your dreams come true</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                </div>
+                <div class="app__bg__image next--image">
+                    <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                </div>
+                <div class="app__bg__image previous--image">
+                    <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading__wrapper">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span></span>
+            </div>
+        </div>
+        
+        
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='328 112 184 256 328 400'
+                             style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='184 112 328 256 184 400'
+                             style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+        </svg>
+            
+        
+        
+
+<!---------------------------import scripts-->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.4.0/jquery.waitforimages.min.js"></script>
+<script src="../styles/gallery.js"></script>
+    </body>
+    <footer class="footer bg-dark text-white py-4 footer container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="footer-title">À propos de nous</h5>
+              <p class="footer-text">Nous sommes une agence de voyage spécialisée dans les voyages d'aventure. Nous vous proposons des séjours sur mesure, adaptés à vos envies et à votre niveau, dans les plus belles destinations du monde. Que vous soyez à la recherche de sensations fortes, de dépaysement ou de rencontres authentiques, nous avons le voyage qu'il vous faut !</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="footer-title">Destinations</h5>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">Afrique </a></li>
+                <li><a href="#" class="footer-link">Asie</a></li>
+                <li><a href="#" class="footer-link">Europe</a></li>
+                <li><a href="#" class="footer-link">Amériques</a></li>
+                <li><a href="#" class="footer-link">Océanie</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <h5 class="footer-title">Contactez-nous</h5>
+              <p class="footer-text"><i class="fas fa-map-marker-alt"></i> Carriere bab el oued Alger</p>
+              <p class="footer-text"><i class="fas fa-phone"></i> +213551000000</p>
+              <p class="footer-text"><i class="fas fa-envelope"></i> contact@adventure.com</p>
+              <p class="footer-text"><i class="fas fa-globe"></i> www.adventure.com</p>
+              <div class="footer-social">
+                <a href="./Destinations.html" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="./Destinations.html" class="footer-icon"><i class="fab fa-twitter"></i></a>
+                <a href="./Destinations.html" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                <a href="./Destinations.html" class="footer-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="footer-copy">&copy; 2023 Adventure. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </html>

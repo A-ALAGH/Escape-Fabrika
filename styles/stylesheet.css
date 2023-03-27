@@ -1,0 +1,179 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+.bg-custom{
+    background-color: #222;
+    height: min-content;}
+.navv{
+    float:right;
+    margin-left: 20%;
+}
+.navLogo { 
+    height: 80px;
+    margin-top: auto;
+    flex-direction: column;
+    position: relative;
+;}
+/* .container-fluid {
+    background-image: url("./images/2-33.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  } */
+  .background-image {
+    display: block;
+    width: 100%;
+    height: max-content;
+    background-image: url("../images/bg-main.jpg"); /* Remplacez par l'URL de votre image */
+    background-attachment: fixed; /* Fixe l'image de fond par rapport à la fenêtre du navigateur */
+    background-position: center bottom; /* Positionne l'image de fond au centre et en bas */
+  }
+.logoHeader {
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    left: 15%;
+    height: 28vw;
+    animation: rotation 1s  linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  .slogan {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    left: 50%;
+    height: 50vh;
+    color:#F1D272 ;
+  }
+  .slogan h2 {
+    color: #EE0000;
+    font-size: 3vw;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    -webkit-animation: typing 3.5s steps(30, end), pause 3s steps(1, end), blink-caret .75s step-end infinite;
+    animation: ecrire 3s infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+  }
+/* Définir les étapes de l'animation */
+@keyframes ecrire {
+    0% {
+      /* Le texte est transparent au début */
+      opacity: 0;
+    }
+    50% {
+      /* Le texte devient visible progressivement */
+      opacity: 1;
+    }
+    100% {
+      /* Le texte reste visible à la fin */
+      opacity: 1;
+    }
+  }
+  .slogan h1 {
+    font-size: 3.2vw;
+    font-weight: bolder;
+  }
+  .chart {
+margin-top: 10%;
+height: 300px;
+width: 100%;
+display: block;
+  }
+  
+   /* .slogan {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    left: 60%;
+    height: 50vh;
+  }
+  
+  .slogan::after {
+    content: "|";
+    margin-left: .1em;
+    animation: typing .5s steps(20) infinite alternate;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: auto }
+  }  */
+
+
+/* .slogan::after {
+    content: "|";
+    margin-left: .1em;
+    animation: typing .5s steps(20) infinite alternate;
+  } */
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-link {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-link:hover {
+    color: #ffc107;
+  }
+  
+  .footer-icon {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer-icon:hover {
+    color: #ffc107;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+  }
+  @media (max-width: 780px) {
+    .background-image {
+        margin-top: 15%;
+        position: relative;
+    }
+    .logoHeader{
+        top: 25%;
+    }
+    .slogan{
+        top: 30%;
+
+    }
+    .chart {
+        margin-top: 30%;
+        height: 300px;
+        width: 90vw;
+          }
+  }
