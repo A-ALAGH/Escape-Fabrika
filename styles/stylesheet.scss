@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
-
 :root {
 	--card-width: 200px;
 	--card-height: 300px;
@@ -17,9 +16,10 @@
 body {
 	width: 100%;
 	height: 100vh;
-	display: block;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: rgba(0, 0, 0, 0.787);
 	overflow: hidden;
 }
 
@@ -46,6 +46,7 @@ button {
 		width: 100%;
 		height: 100%;
 		z-index: -5;
+		filter: blur(8px);
 		pointer-events: none;
 		user-select: none;
 		overflow: hidden;
@@ -101,7 +102,7 @@ button {
 	height: auto;
 
 	&__btn {
-		--btn-size: 50px;
+		--btn-size: 35px;
 		width: var(--btn-size);
 		height: var(--btn-size);
 		position: absolute;
@@ -120,29 +121,30 @@ button {
 			width: 100%;
 			height: 100%;
 			svg {
-				width: 100%;
-				height: 100%;
+				width: 200%;
+				height: 200%;
 			}
 		}
 	}
 
 	.cards__wrapper {
+        top: -600px;;
 		position: relative;
 		width: 100%;
 		height: 100%;
 		perspective: 1000px;
-        display: none;
 	}
 }
 
 .card {
+	--card-translateY-offset: 100vh;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
 		translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset))
 		scale(var(--card-scale-offset));
-	display:block;
+	display: inline-block;
 	width: var(--card-width);
 	height: var(--card-height);
 	transition: transform var(--card-transition-duration)
@@ -153,7 +155,7 @@ button {
 		content: "";
 		position: absolute;
 		left: 0;
-		top: -130%;
+		top: 0;
 		width: 100%;
 		height: 100%;
 		background: #000;
@@ -170,7 +172,7 @@ button {
 		img {
 			position: absolute;
 			left: 0;
-			top: -130%;
+			top: 0;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -182,7 +184,7 @@ button {
 		--card-translateX-offset: 0;
 		--card-rotation-offset: var(--current-card-rotation-offset);
 		--card-scale-offset: 1.2;
-		--opacity: 1;
+		--opacity: 0.8;
 	}
 
 	&.previous--card {
@@ -201,6 +203,7 @@ button {
 		--opacity: 0.4;
 	}
 }
+
 .infoList {
 	position: absolute;
 	width: calc(3 * var(--card-width));
@@ -254,6 +257,7 @@ button {
 		&::after {
 			content: "";
 			position: absolute;
+			background: #fff;
 			left: 0%;
 			transform: translate(calc(-1 * var(--mg-left)), -50%);
 		}
@@ -345,9 +349,6 @@ button {
 		}
 	}
 }
-footer{
-    display: block;
-}
 .footer-title {
     font-weight: bold;
     margin-bottom: 15px;
@@ -388,9 +389,6 @@ footer{
   .footer-copy {
     font-size: 14px;
   }
-  body {
-    overflow: auto;
-  }
   .navLogo { 
     height: 80px;
     margin-top: auto;
@@ -400,3 +398,12 @@ footer{
 .bg-custom{
     background-color: #222;
     height: min-content;}
+
+      
+.footer {
+ position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+top: 900px;;
+}

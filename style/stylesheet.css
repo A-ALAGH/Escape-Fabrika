@@ -15,9 +15,10 @@
 body {
   width: 100%;
   height: 100vh;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.787);
   overflow: hidden;
 }
 
@@ -44,6 +45,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: -5;
+  filter: blur(8px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
@@ -94,7 +96,7 @@ button:focus {
   height: auto;
 }
 .cardList__btn {
-  --btn-size: 50px;
+  --btn-size: 35px;
   width: var(--btn-size);
   height: var(--btn-size);
   position: absolute;
@@ -113,23 +115,24 @@ button:focus {
   height: 100%;
 }
 .cardList__btn .icon svg {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
 }
 .cardList .cards__wrapper {
+  top: -600px;
   position: relative;
   width: 100%;
   height: 100%;
   perspective: 1000px;
-  display: none;
 }
 
 .card {
+  --card-translateY-offset: 100vh;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
-  display: block;
+  display: inline-block;
   width: var(--card-width);
   height: var(--card-height);
   transition: transform var(--card-transition-duration) var(--card-transition-easing);
@@ -139,7 +142,7 @@ button:focus {
   content: "";
   position: absolute;
   left: 0;
-  top: -130%;
+  top: 0;
   width: 100%;
   height: 100%;
   background: #000;
@@ -155,7 +158,7 @@ button:focus {
 .card__image img {
   position: absolute;
   left: 0;
-  top: -130%;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -165,7 +168,7 @@ button:focus {
   --card-translateX-offset: 0;
   --card-rotation-offset: var(--current-card-rotation-offset);
   --card-scale-offset: 1.2;
-  --opacity: 1;
+  --opacity: 0.8;
 }
 .card.previous--card {
   --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
@@ -229,6 +232,7 @@ button:focus {
 .info .location::before, .info .location::after {
   content: "";
   position: absolute;
+  background: #fff;
   left: 0%;
   transform: translate(calc(-1 * var(--mg-left)), -50%);
 }
@@ -315,10 +319,6 @@ button:focus {
   transform: scale(1.1);
 }
 
-footer {
-  display: block;
-}
-
 .footer-title {
   font-weight: bold;
   margin-bottom: 15px;
@@ -360,10 +360,6 @@ footer {
   font-size: 14px;
 }
 
-body {
-  overflow: auto;
-}
-
 .navLogo {
   height: 80px;
   margin-top: auto;
@@ -374,4 +370,12 @@ body {
 .bg-custom {
   background-color: #222;
   height: min-content;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 900px;
 }/*# sourceMappingURL=stylesheet.css.map */
