@@ -1,0 +1,15 @@
+carte simple color on hover
+https://codepen.io/telatkaya/pen/GRZgOJJ
+carte avec hotspots
+https://codepen.io/christieyoomi/pen/BazPEMe
+bouton (logo rotatif)
+https://codepen.io/Abbas-Laghoub-Aghilas/pen/eYLLWPG
+dark simple navbar, with hamburger menu (my favorite)
+https://codepen.io/celincky/pen/abPjZb
+        <ul class="footer-list">
+          <li><a href="#" class="footer-link">Randonnées et trekkings</a></li>
+          <li><a href="#" class="footer-link">Rafting et kayak</a></li>
+          <li><a href="#" class="footer-link">VTT et cyclotourisme</a></li>
+          <li><a href="#" class="footer-link">Parapente et deltaplane</a></li>
+          <li><a href="#" class="footer-link">Safari et observation animale</a></li>
+        </ul>
