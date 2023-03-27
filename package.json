@@ -1,0 +1,15 @@
+{
+  "name": "escape",
+  "version": "1.0.0",
+  "description": "fabrika project ecape",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abbas",
+  "license": "ISC",
+  "dependencies": {
+    "echarts": "^5.4.2",
+    "jquery": "^3.6.4"
+  }
+}

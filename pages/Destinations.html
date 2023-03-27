@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destinations
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-custom navbar-dark fixed-top ">
+            <ul><li><img src="../images/escape.PNG" alt="logo" class="navLogo"> </li></ul>
+            <!-- Bouton hamburger -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Div qui contient les éléments de la barre de navigation -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav navv">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">A Propos</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Offres Spéciales</a>
+                </li>
+                <!--search-->
+                <li ><form class="d-flex ">
+                  <input class="form-control me-2" type="text" placeholder="Rechercher sur le site">
+                  <button class="btn btn-primary" type="button">Search</button></form>
+                  </li>
+                
+              </ul>
+            </div>
+        </nav>
+    <div class="container-fluid">
+        <div class="chart container-fluid" id="chart" style="width:100%;height:300px"></div>
+    </div>
+
+
+<!--                        scripts nécéssaires-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script src="../styles/effects.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script src="../styles/effects.js"></script>
+    </body>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="footer-title">À propos de nous</h5>
+              <p class="footer-text">Nous sommes une agence de voyage spécialisée dans les voyages d'aventure. Nous vous proposons des séjours sur mesure, adaptés à vos envies et à votre niveau, dans les plus belles destinations du monde. Que vous soyez à la recherche de sensations fortes, de dépaysement ou de rencontres authentiques, nous avons le voyage qu'il vous faut !</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="footer-title">Destinations</h5>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">Afrique </a></li>
+                <li><a href="#" class="footer-link">Asie</a></li>
+                <li><a href="#" class="footer-link">Europe</a></li>
+                <li><a href="#" class="footer-link">Amériques</a></li>
+                <li><a href="#" class="footer-link">Océanie</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <h5 class="footer-title">Contactez-nous</h5>
+              <p class="footer-text"><i class="fas fa-map-marker-alt"></i> Carriere bab el oued Alger</p>
+              <p class="footer-text"><i class="fas fa-phone"></i> +213551000000</p>
+              <p class="footer-text"><i class="fas fa-envelope"></i> contact@adventure.com</p>
+              <p class="footer-text"><i class="fas fa-globe"></i> www.adventure.com</p>
+              <div class="footer-social">
+                <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="footer-copy">&copy; 2023 Adventure. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </html>
